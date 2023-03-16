@@ -1,0 +1,3 @@
+ssh jetbot@0.0.0.0
+sudo shutdown now
+sudo reboot now
