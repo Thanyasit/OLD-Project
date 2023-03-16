@@ -1,0 +1,25 @@
+{
+    "name": "DebounceEvent",
+    "keywords": "button,event,debounce,pushbutton,toggle",
+    "description": "Simple push button and toggle switch debounce library that reports number of clicks and length",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xoseperez/debounceevent"
+    },
+    "version": "2.0.5",
+    "license": "GPL-3.0",
+    "exclude": "tests",
+    "frameworks": "arduino",
+    "platforms": ["atmelavr","espressif8266"],
+    "dependencies": [
+    ],
+    "authors": {
+        "name": "Xose Perez",
+        "email": "xose.perez@gmail.com",
+        "url": "http://tinkerman.cat",
+        "maintainer": true
+    },
+    "examples": [
+        "examples/*/*.ino"
+    ]
+}
