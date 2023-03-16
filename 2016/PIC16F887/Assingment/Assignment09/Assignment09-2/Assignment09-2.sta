@@ -1,0 +1,56 @@
+
+ROM used: 352 (4%)
+          352 (4%) including unused fragments
+
+          1 Average locations per line
+          4 Average locations per statement
+
+RAM used: 13 (4%) at main() level
+          23 (6%) worst case
+
+Stack used: 4 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   67    20  24  Assignment09-2.c
+   21     0   0  Assignment09-2.h
+  410     0   0  C:\Program Files (x86)\PICC\devices\16F887.h
+  178    63  76  C:\Program Files (x86)\PICC\drivers\lcd.c
+----- -----
+  676    83 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   6   1             @delay_ms2
+0      8   2   0             @const63
+ Inline        3   463  4.3  lcd_read_byte
+0     15   4   1   134  2.2  lcd_send_nibble
+0     60  17   3   317  4.3  lcd_send_byte
+0     44  12   2   422  4.7  lcd_init
+0     18   5   4   186  5.5  lcd_gotoxy
+0     39  11   1   272  4.1  lcd_putc
+0    132  38   5   568  4.7  MAIN
+0     12   3   0             @const97
+
+Program metrics:
+    Functions               7
+    Statements              83
+    Comments                167
+    Volume (V)              3561
+    Difficilty (D)          29.3
+    Effort to implement (E) 104407
+    Time to implement (T)   1 hours, 37 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   8
+    Maintainability (MI)    146
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   348  1696  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

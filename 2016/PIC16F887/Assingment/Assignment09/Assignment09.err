@@ -1,0 +1,5 @@
+>>> Warning 203 "Assignment09.c" Line 23(1,1): Condition always TRUE
+>>> Warning 202 "Assignment09.c" Line 5(9,12): Variable never used:   msa
+>>> Warning 202 "Assignment09.c" Line 7(10,11): Variable never used:   x
+      Memory usage:   ROM=3%      RAM=9% - 10%
+      0 Errors,  3 Warnings.
