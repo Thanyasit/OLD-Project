@@ -1,0 +1,3 @@
+# Studied at Tha Luang Cement Thai Anusorn Technical College
+
+The PIC16F887 microcontroller has 14-bit instruction words and a Harvard architecture, which means that it has separate memory spaces for instructions and data. It has 8K bytes of flash memory for program storage and 368 bytes of RAM for data storage. It also has a variety of integrated peripherals, including analog-to-digital converters, timers, and serial communication interfaces.
