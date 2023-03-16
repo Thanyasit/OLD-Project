@@ -1,0 +1,65 @@
+
+ROM used: 943 (12%)
+          943 (12%) including unused fragments
+
+          0 Average locations per line
+          2 Average locations per statement
+
+RAM used: 24 (7%) at main() level
+          53 (14%) worst case
+
+Stack used: 4 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   37    23   4  Assignment08.c
+   20     0   0  Assignment08.h
+  410     0   0  C:\Program Files (x86)\PICC\devices\16F887.h
+  178    63  11  C:\Program Files (x86)\PICC\drivers\lcd.c
+  899   380  64  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  417   126  21  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+----- -----
+ 2017   592 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   2   1             @delay_ms1
+0      8   1   0             @const54
+ Inline        3   463  4.3  lcd_read_byte
+0     15   2   1   134  2.2  lcd_send_nibble
+0     60   6   3   317  4.3  lcd_send_byte
+0     44   5   2   422  4.7  lcd_init
+0     18   2   4   186  5.5  lcd_gotoxy
+0     37   4   1   272  4.1  lcd_putc
+0    254  27  23  1068 11.1  itoa
+0     42   4  13             @MUL3232
+0    109  12  14             @DIVS3232
+0    222  24  11   880  6.7  MAIN
+0     21   2   0             @const362
+0     21   2   0             @const363
+0     68   7  13             @DIV3232
+
+Program metrics:
+    Functions               8
+    Statements              592
+    Comments                895
+    Volume (V)              5556
+    Difficilty (D)          41.9
+    Effort to implement (E) 232834
+    Time to implement (T)   3 hours, 36 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   12
+    Maintainability (MI)    36
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   939  1105  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

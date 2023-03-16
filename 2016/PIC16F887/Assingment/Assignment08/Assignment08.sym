@@ -1,0 +1,136 @@
+004     @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     lcd
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026     @TRIS_C
+027-02A MAIN.adcVal
+02B     MAIN.i
+02C-02D MAIN.string
+02E-031 itoa.num
+02E     lcd_init.i
+02E     MAIN.@SCRATCH
+02F     lcd_putc.c
+02F     lcd_init.@SCRATCH
+02F     MAIN.@SCRATCH
+030     lcd_gotoxy.x
+030     @delay_ms1.P1
+030     MAIN.@SCRATCH
+031     lcd_gotoxy.y
+031     MAIN.@SCRATCH
+032     itoa.base
+032-035 @DIV3232.P1
+032     lcd_gotoxy.address
+033-034 itoa.s
+033     lcd_gotoxy.@SCRATCH
+034     lcd_send_byte.address
+035-038 itoa.temp
+035     lcd_send_byte.n
+036-039 @DIV3232.P1
+036     lcd_read_byte.low
+036     lcd_send_byte.@SCRATCH
+037     lcd_send_nibble.n
+037     lcd_read_byte.high
+038     lcd_read_byte.@SCRATCH
+039     itoa.i
+03A     itoa.sign
+03A     @DIV3232.@SCRATCH
+03B     itoa.cnt
+03B     @DIV3232.@SCRATCH
+03C     itoa.c
+03C     @DIV3232.@SCRATCH
+03D-040 @MUL3232.P1
+03D     itoa.@SCRATCH
+03D     @DIV3232.@SCRATCH
+03E     itoa.@SCRATCH
+03E     @DIV3232.@SCRATCH
+03F     itoa.@SCRATCH
+040     itoa.@SCRATCH
+041-044 @DIVS3232.P1
+041-044 @MUL3232.P2
+041     itoa.@SCRATCH
+042     itoa.@SCRATCH
+043     itoa.@SCRATCH
+044     itoa.@SCRATCH
+045-048 @DIVS3232.P1
+045     @MUL3232.@SCRATCH
+046     @MUL3232.@SCRATCH
+047     @MUL3232.@SCRATCH
+048     @MUL3232.@SCRATCH
+049     @MUL3232.@SCRATCH
+049     @DIVS3232.@SCRATCH
+04A     @DIVS3232.@SCRATCH
+04B     @DIVS3232.@SCRATCH
+04C     @DIVS3232.@SCRATCH
+04D     @DIVS3232.@SCRATCH
+04E     @DIVS3232.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+0036  @delay_ms1
+0004  LCD_INIT_STRING
+005A  lcd_read_byte
+004A  lcd_send_nibble
+0059  lcd_send_byte
+0095  lcd_init
+00C1  lcd_gotoxy
+00D3  lcd_putc
+01D3  itoa
+00F8  @MUL3232
+0166  @DIVS3232
+02D1  MAIN
+000C  @const362
+0021  @const363
+0122  @DIV3232
+02D1  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    D:\Work T.Pongsak\Microcontroller\Work\Assignment08\
+
+Project Files:
+    Assignment08.c
+    Assignment08.h
+    C:\Program Files (x86)\PICC\devices\16F887.h
+    C:\Program Files (x86)\PICC\drivers\lcd.c
+    C:\Program Files (x86)\PICC\drivers\stdlib.h
+    C:\Program Files (x86)\PICC\drivers\stddef.h
+    C:\Program Files (x86)\PICC\drivers\string.h
+    C:\Program Files (x86)\PICC\drivers\ctype.h
+
+Units:
+    Assignment08.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Assignment08.err
+    Ext Symbols: Assignment08.esym
+    INHX8:       Assignment08.hex
+    Symbols:     Assignment08.sym
+    List:        Assignment08.lst
+    Debug/COFF:  Assignment08.cof
+    Project:     Assignment08.PJT
+    Call Tree:   Assignment08.tre
+    Statistics:  Assignment08.sta

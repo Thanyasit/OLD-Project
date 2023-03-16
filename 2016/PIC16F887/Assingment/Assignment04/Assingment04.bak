@@ -1,0 +1,53 @@
+#include "D:\Work T.Pongsak\Microcontroller\Work\Assingment04\Assingment04.h"
+#use delay (clock=20M)
+#include <lcd.c>
+
+void main()
+{
+   char num[]={'1','2','3','4','5','6','7','8','9','0'};
+   int i,sw1,sw2,a;
+   setup_adc_ports(NO_ANALOGS);
+   setup_adc(ADC_OFF);
+   setup_psp(PSP_DISABLED);
+   setup_spi(SPI_SS_DISABLED);
+   setup_timer_0(RTCC_INTERNAL|RTCC_DIV_1);
+   setup_timer_1(T1_DISABLED);
+   setup_timer_2(T2_DISABLED,0,1);
+   setup_comparator(NC_NC_NC_NC);
+   setup_vref(FALSE);
+
+   // TODO: USER CODE!!
+   set_tris_c(0xb0);
+   lcd_init();
+   lcd_gotoxy(8,1);
+   lcd_putc(num[9]);
+   lcd_gotoxy(8,2);
+   lcd_putc(num[9]);
+   while(1){
+            output_c(0x40);
+            sw1 = input(PIN_C6);
+            delay_ms(100);
+            if(sw1==0){
+                     lcd_gotoxy(8,1);     
+                     lcd_putc(num[i]);
+                     i++;
+                     if(i==10){
+                              i=0;
+                     }
+            }
+            output_c(0x80);
+            sw2 = input(PIN_C7);
+            delay_ms(100);
+            if(sw2==0){
+                     lcd_gotoxy(8,2);
+                     lcd_putc(num[a]);
+                     a++;
+                     if(a==10){
+                              a=0;
+                     }
+                     do{
+                        sw2 = input(PIN_C7);
+                     }while(sw2==0);
+            }
+   }
+}
