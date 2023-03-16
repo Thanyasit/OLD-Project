@@ -1,0 +1,15 @@
+A wins
+B wins
+Draw
+A wins
+Draw
+B wins
+Draw
+B wins
+Draw
+A wins
+Draw
+A wins
+A wins
+RESULT = A is Champion!!
+Signed Thanyasit
