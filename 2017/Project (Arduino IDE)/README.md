@@ -1,1 +1,0 @@
-# Project at Tha Luang Cement Thai Anusorn Technical College
