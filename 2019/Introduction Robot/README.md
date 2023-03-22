@@ -1,1 +1,0 @@
-# Studied at Suranaree University
